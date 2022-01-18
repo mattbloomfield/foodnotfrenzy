@@ -12,9 +12,9 @@
     "scripts:prod": "webpack --mode=production",
     "scripts:dev": "webpack --mode=development",
     "serve": "light-server -c .lightserverrc",
-    "dev": "NODE_ENV=development npm-run-all --serial clean scripts:dev styles:dev eleventy:dev   --print-label",
+    "dev": "NODE_ENV=development npm-run-all --serial clean scripts:dev styles:dev eleventy:dev --print-label",
     "dev:debug": "DEBUG=* npm run dev",
-    "build": "NODE_ENV=production run-s data clean scripts:prod eleventy:default styles:prod --print-label"
+    "build": "NODE_ENV=production run-s clean scripts:prod styles:prod eleventy:default --print-label"
   },
   "author": "Matt Bloomfield",
   "license": "MIT",
